@@ -1,6 +1,6 @@
-﻿# lazy.create
+# lazy.create
 
-Once you have a template created, you can instantiate new components from it in many ways.
+This function allows you to instantiate new components from an existing template.
 
 ### From URL
 
