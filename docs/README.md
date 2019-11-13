@@ -3,7 +3,7 @@
 A simple javascript library to create simple UI components that can be lazy-loaded via Promises.
 
 * [Templates](https://github.com/progelio/lazy.js/blob/master/docs/templates.md)
-* [lazy.create]()
+* [lazy.create](https://github.com/progelio/lazy.js/blob/master/docs/create.md)
 * [lazy.mount]()
 * [lazy.attach]()
 * [lazy.compile]()
@@ -171,6 +171,3 @@ If you have multiple components, you can use the wild card "*" as shown below:
 
 The "element" property may take a css querySelector string or an actual element. 
 The `lazy.attach` funtion also takes "name" or "html" properties just like `lazy.mount`. 
-
-
-
