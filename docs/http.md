@@ -1,6 +1,6 @@
 ﻿# lazy.http
 
-Make web request a returns a promise.
+Make a web request and returns a promise.
 
 ```html
 <script>
