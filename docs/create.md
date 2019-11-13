@@ -60,7 +60,7 @@ The `lazy.create` function returns a promise that resolves when the component ha
 
 ### Options
 
-You can pass objects to your components when instantiating them.
+You can pass data to your components when instantiating them.
 
 ```html
 <script>
