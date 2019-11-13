@@ -4,7 +4,7 @@ A simple javascript library to create simple UI components that can be lazy-load
 
 * [Templates](https://github.com/progelio/lazy.js/blob/master/docs/templates.md)
 * [lazy.create](https://github.com/progelio/lazy.js/blob/master/docs/create.md)
-* [lazy.mount]()
+* [lazy.mount](https://github.com/progelio/lazy.js/blob/master/docs/mount.md)
 * [lazy.attach]()
 * [lazy.compile]()
 * [lazy.http]()
