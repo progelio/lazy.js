@@ -1,6 +1,6 @@
-﻿# lazy.mount
+# lazy.mount
 
-Once you have a template created, you can instantiate new components by declaring an empty tag on your html document.
+This function allows you to instantiate new components mounted on empty tags on your html document.
 
 ```html
 <body>
