@@ -2,6 +2,15 @@
 
 A simple javascript library to create simple UI components that can be lazy-loaded via Promises.
 
+* [Templates](https://github.com/progelio/lazy.js/blob/master/docs/templates.md)
+* [lazy.create]()
+* [lazy.mount]()
+* [lazy.attach]()
+* [lazy.compile]()
+* [lazy.http]()
+* [lazy.route]()
+
+
 ## How to use it.
 
 Include the script file in your html document:
@@ -83,7 +92,7 @@ In your html document, where you want to consume your custom component, declare 
 
 Your todo tag will be replaced with an instance built from your custom component template.
 
-### Mount Using Script Referece
+### Mount Using Script Reference
 
 ```html
 <body>
@@ -162,3 +171,6 @@ If you have multiple components, you can use the wild card "*" as shown below:
 
 The "element" property may take a css querySelector string or an actual element. 
 The `lazy.attach` funtion also takes "name" or "html" properties just like `lazy.mount`. 
+
+
+
