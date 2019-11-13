@@ -1,4 +1,4 @@
-﻿# Templates
+# Templates
 
 A component is a simple html tag with an inner body. It contains three parts: `html`, `style` and `script`. Example:
 
@@ -286,4 +286,23 @@ After your task is complete, you must call the `this.ready()` function so the co
 
 ## opts
 
-This is a property that is used to pass property values to your component.
+This is a property that is used to pass data to your component.
+
+```html
+<contact>
+    <div>{opts.name}<div>
+
+    <script>
+        this.onCreate = function () {
+            console.log(opts.name) //available here too.
+        }
+    </script>
+</contact>
+```
+You can pass the value to your component when you instantiate the component:
+
+```html
+<script>
+    lazy.create({ url: "contact.html", opts: { name: "Contact" } })
+</script>
+```
