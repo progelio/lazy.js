@@ -64,7 +64,7 @@ You can pass objects to your components when instantiating them.
 
 ```html
 <script>
-    lazy.create({ url: "contact.html", opts: { title: "Contact" } })
+    lazy.create({ url: "contact.html", opts: { name: "Contact" } })
 </script>
 ```
 And in your component, you would consume it like this:
