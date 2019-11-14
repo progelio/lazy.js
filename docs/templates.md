@@ -24,7 +24,7 @@ A component is a simple html tag with an inner body. It contains three parts: `h
 
 `style` and `script` are optional.
 
-Your component can be declared as a standalone element in an html file or anywhere of your html document - like inside of a template tag.
+Your component can be declared as a standalone element in an html file or anywhere in your html document - like inside of a template tag.
 
 ## HTML
 
