@@ -217,6 +217,7 @@ There are a few reserved keywords that should only be used in the context of whi
         <span ref="name">{name}</span>
     </div>
 
+    <button onclick="{ changeName }">Change Name</button>
     <button onclick="{ getName }">What is my name?</button>
     <button onclick="{ remove }">Destroy</button>
 
@@ -227,6 +228,11 @@ There are a few reserved keywords that should only be used in the context of whi
 
     <script>
         this.name = "John"
+
+        this.changeName = function(e) {
+            this.name = "Peter"
+            this.update() //update the UI to reflect the change.
+        }
 
         this.getName = function (e) {
             alert(this.refs.name.innerHTML)
