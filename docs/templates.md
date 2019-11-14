@@ -30,7 +30,7 @@ Your component can be declared as a standalone element in an html file or anywhe
 
 The html may contain merge-fields like: `{fieldName}`. These are dynamic placeholders for the value of your fields.
 
-The scope of your merge-fields is contained withing your script tag code like in the example above.
+The scope of your merge-fields is contained within your script tag code like in the example above.
 
 If you need to reference an element within your component, you can use the `ref` attribute. Example:
 
@@ -208,7 +208,7 @@ The script portion of your component is removed from the final rendered version 
 
 There are a few reserved keywords that should only be used in the context of which they are intended:
 
-`refs`, `ready`, `destroy`, `onInit`, `onCreate`, `onCreated`, `onUpdate`, `onUpdated`, `onDestroyed`, `opts`
+`refs`, `ready`, `destroy`, `update`, `onInit`, `onCreate`, `onCreated`, `onUpdate`, `onUpdated`, `onDestroyed`, `opts`
 
 ```html
 <contact>
