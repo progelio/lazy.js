@@ -337,8 +337,20 @@ You can pass the value to your component when you instantiate the component:
 
 ```html
 <script>
-    lazy.create({ url: "contact.html", props: { name: "Contact" } })
+    lazy.create({ url: "contact.html", props: { name: "John" } })
 </script>
+```
+
+Or, if you mount your component:
+
+```html
+<body>
+    <contact name="John"></contact>
+
+    <script>
+        lazy.mount({ url: "contact.html" })
+    </script>
+</body>
 ```
 
 #### Child Components
