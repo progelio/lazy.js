@@ -171,3 +171,6 @@ If you have multiple components, you can use the wild card "*" as shown below:
 
 The "element" property may take a css querySelector string or an actual element. 
 The `lazy.attach` funtion also takes "name" or "html" properties just like `lazy.mount`. 
+
+
+
