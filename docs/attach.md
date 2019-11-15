@@ -1,4 +1,4 @@
-﻿# lazy.attach
+# lazy.attach
 
 This function allows you to instantiate new components from a template and attach the component to an existing html element.
 
@@ -72,19 +72,19 @@ The `lazy.attach` function returns a promise that resolves when the component ha
 
 `root` is your element that can be added to the DOM. `tag` has all the properties and functions that you declared in your component's template.
 
-### Options
+### Properties
 
 You can pass data to your components when instantiating them.
 
 ```html
 <script>
-    lazy.attach({ url: "contact.html", element: myElement, opts: { name: "John" } })
+    lazy.attach({ url: "contact.html", element: myElement, props: { name: "John" } })
 </script>
 ```
 And in your component, you would consume it like this:
 
 ```html
 <contact>
-    <div>{opts.name}</div>
+    <div>{props.name}</div>
 </contact>
 ```
