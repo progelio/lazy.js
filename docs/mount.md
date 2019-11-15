@@ -5,6 +5,7 @@ This function allows you to instantiate new components mounted on empty tags on 
 ```html
 <body>
     <contact></contact>
+    <div is="contact"></div> /*same as above*/
 </body>
 ```
 
@@ -57,7 +58,7 @@ The `lazy.mount` function returns a promise that resolves when the component has
 <script>
     lazy.mount({ html: myHtml })
     .then(function(tags){
-        console.log(tags) //logs a list mounted tags
+        console.log(tags) //logs a list of mounted tags
     }).catch(function(){
         alert("Oh, oh, something happened.")
     })
