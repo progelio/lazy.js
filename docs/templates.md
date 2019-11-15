@@ -7,6 +7,9 @@ A component is a simple html tag with an inner body. It contains three parts: `h
     <div>Name: {name}</div>
     <div>Age: {age}</div>
     <div class="gender">Gender: {gender}</div>
+    <div>Amount: {formatCurrency(100)}</div>    
+
+    <div>Time: {new Date()}</div>
 
     <style>
         :root { display:block }
@@ -18,6 +21,10 @@ A component is a simple html tag with an inner body. It contains three parts: `h
         this.name = "John"
         this.age = 45
         this.gender = "Male"
+
+        this.formatCurreny = function(amount){
+            return "$" + amount + ".00"
+        }
     </script>
 </contact>
 ```
@@ -30,7 +37,12 @@ Your component can be declared as a standalone element in an html file or anywhe
 
 The html may contain merge-fields like: `{fieldName}`. These are dynamic placeholders for the value of your fields.
 
-The scope of your merge-fields is contained within your script tag code like in the example above.
+Anything you type between the curly brackets `{...}` will be evaluated. You can do `{ new Date() }` or call a function `{ formatCurrency(12) }`.
+You can also access window level variables by doing `{ window.myVariable }`.
+
+Merge-fields are run in the scope of your script tag as shown in the above example.
+
+#### Then `ref` Attribute
 
 If you need to reference an element within your component, you can use the `ref` attribute. Example:
 
@@ -162,6 +174,22 @@ Used to show or hide an element and reserve its visual allocated space using the
     </script>
 </contact>
 ```
+
+#### Ternary `true ? true : false` Shortcut `value:condition`
+
+You can use a ternary shortcut anywhere on your template. Example:
+
+```html
+<div class="{is-loading:true}"></div>
+```
+
+becomes:
+
+```html
+<div class="is-loading"></div>
+```
+
+The condition can be any truthy or falsy value.
 
 ## Style
 
