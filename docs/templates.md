@@ -340,3 +340,38 @@ You can pass the value to your component when you instantiate the component:
     lazy.create({ url: "contact.html", props: { name: "Contact" } })
 </script>
 ```
+
+#### Child Components
+
+You can create components that have other child components in them. Take a look at the `todo` component below:
+
+```html
+<todo>
+    <contact></contact>
+
+    <div>My {title} Todo List</div>
+    ...
+    <script type="lazy/contact" src="contact.html"></script>
+
+    <style>
+        :root { display:block }
+    </style>
+
+    <script>
+        this.title = "Shopping"
+    </script>
+</todo>
+```
+
+The child component is automatically mounted because you have a script reference there. There is no need to use `lazy.mount`.
+
+#### The `is` Attribute
+
+You can mount a component on a standard tag by using the `is` attribute.
+
+```html
+<todo>
+    <div is="contact"></div>
+    <script type="lazy/contact" src="contact.html"></script>
+</todo>
+```
