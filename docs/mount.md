@@ -64,20 +64,20 @@ The `lazy.mount` function returns a promise that resolves when the component has
 </script>
 ```
 
-### Options
+### Properties
 
 You can pass data to your component during mount.
 
 ```html
 <script>
-    lazy.mount({ url: "contact.html", opts: { name: "John" } })
+    lazy.mount({ url: "contact.html", props: { name: "John" } })
 </script>
 ```
 And in your component, you would consume it like this:
 
 ```html
 <contact>
-    <div>{opts.name}</div>
+    <div>{props.name}</div>
 </contact>
 ```
 
