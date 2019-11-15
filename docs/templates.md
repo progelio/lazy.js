@@ -208,7 +208,7 @@ The script portion of your component is removed from the final rendered version 
 
 There are a few reserved keywords that should only be used in the context of which they are intended:
 
-`refs`, `ready`, `destroy`, `update`, `onInit`, `onCreate`, `onCreated`, `onUpdate`, `onUpdated`, `onDestroyed`, `opts`
+`refs`, `ready`, `destroy`, `update`, `onInit`, `onCreate`, `onCreated`, `onUpdate`, `onUpdated`, `onDestroyed`, `props`
 
 ```html
 <contact>
@@ -243,28 +243,28 @@ There are a few reserved keywords that should only be used in the context of whi
         }
 
         this.onInit = function () {
-            console.log("init")
+            //after initialized
             this.ready()
         }
 
         this.onCreate = function () {
-            console.log("create")
+            //before create
         }
 
         this.onUpdate = function () {
-            console.log("update")
+            //before update
         }
 
         this.onUpdated = function () {
-            console.log("updated")
+            //after update
         }
 
         this.onCreated = function () {
-            console.log("created")
+            //after create
         }
 
         this.onDestroyed = function () {
-            console.log("destroyed")
+            //after destroyed
         }
     </script>
 </contact>
@@ -290,17 +290,17 @@ The `onInit` event allows you to do things before the component is loaded into t
 
 After your task is complete, you must call the `this.ready()` function so the component is loaded. The `this.ready()` function is always required if the `onInit` event is used.
 
-## opts
+## props
 
 This is a property that is used to pass data to your component.
 
 ```html
 <contact>
-    <div>{opts.name}<div>
+    <div>{props.name}<div>
 
     <script>
         this.onCreate = function () {
-            console.log(opts.name) //available here too.
+            console.log(props.name) //available here too.
         }
     </script>
 </contact>
@@ -309,6 +309,6 @@ You can pass the value to your component when you instantiate the component:
 
 ```html
 <script>
-    lazy.create({ url: "contact.html", opts: { name: "Contact" } })
+    lazy.create({ url: "contact.html", props: { name: "Contact" } })
 </script>
 ```
