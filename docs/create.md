@@ -58,19 +58,19 @@ The `lazy.create` function returns a promise that resolves when the component ha
 
 `root` is your element that can be added to the DOM. `tag` has all the properties and functions that you declared in your component's template.
 
-### Options
+### Properties
 
 You can pass data to your components when instantiating them.
 
 ```html
 <script>
-    lazy.create({ url: "contact.html", opts: { name: "John" } })
+    lazy.create({ url: "contact.html", props: { name: "John" } })
 </script>
 ```
 And in your component, you would consume it like this:
 
 ```html
 <contact>
-    <div>{opts.name}</div>
+    <div>{props.name}</div>
 </contact>
 ```
