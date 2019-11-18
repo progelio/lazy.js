@@ -42,7 +42,7 @@ You can also access window level variables by doing `{ window.myVariable }`.
 
 Merge-fields are run in the scope of your script tag as shown in the above example.
 
-#### Then `ref` Attribute
+#### The `ref` Attribute
 
 If you need to reference an element within your component, you can use the `ref` attribute. Example:
 
